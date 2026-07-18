@@ -1,0 +1,22 @@
+.data-badge {
+    padding: 7px 14px;
+    border: 1px solid var(--border);
+    border-radius: 3000px;
+    font-size: 0.8rem;
+    text-transform: capitalize;
+    color: var(--text-2);
+    transition: var(--general-transition);
+    width: fit-content;
+    font-weight: 600;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    text-align: center;
+}
+
+.data-badge:hover {
+    border: 1px solid var(--accent);
+    translate: 0 -2px;
+    color: var(--accent);
+    background-color: var(--accent-soft);
+}

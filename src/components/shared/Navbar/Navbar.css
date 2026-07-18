@@ -1,13 +1,16 @@
 header {
     display: flex;
-    width: 100dvw;
     justify-content: space-between;
     align-items: center;
     padding: 20px;
     border-bottom: 1px solid var(--border);
-    background: transparent;
-    backdrop-filter: blur(15px);
+    background: var(--surface);
     z-index: 100;
+    max-width: 1300px;
+    margin: 0 auto;
+    position: fixed;
+    right: 0;
+    left: 0;
 }
 
 .logo,
@@ -116,10 +119,15 @@ header {
 
 .header-icon:hover {
     background-color: var(--surface-2);
+
+    svg {
+        fill: currentColor;
+    }
 }
 
 .header-icon svg {
     width: 16px;
+    transition: var(--general-transition);
 }
 
 @media(max-width:768px) {
