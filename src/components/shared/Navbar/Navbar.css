@@ -1,0 +1,149 @@
+header {
+    display: flex;
+    width: 100dvw;
+    justify-content: space-between;
+    align-items: center;
+    padding: 20px;
+    border-bottom: 1px solid var(--border);
+    background: transparent;
+    backdrop-filter: blur(15px);
+}
+
+.logo,
+.header-left,
+.header-right,
+.header-icons {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.header-left {
+    gap: 10px;
+}
+
+.logo {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    gap: 10px;
+}
+
+.logo-icon {
+    padding: 6px 10px;
+    background-color: var(--accent);
+    border-radius: var(--radius-sm);
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.logo-icon svg {
+    stroke: white;
+    width: 18px;
+}
+
+.logo span {
+    font-size: 1rem;
+    font-weight: 700;
+    text-transform: uppercase;
+}
+
+.header-right {
+    width: 100%;
+    max-width: 500px;
+    gap: 10px;
+}
+
+.header-search-bar-container {
+    display: flex;
+    justify-content: start;
+    align-items: center;
+    position: relative;
+    width: 100%;
+}
+
+.header-search-bar-container svg {
+    position: absolute;
+    opacity: 0.7;
+    width: 16px;
+    left: 20px;
+}
+
+.header-search-bar-container input {
+    width: 100%;
+    background: none;
+    border: none;
+    border: 1px solid var(--border);
+    height: 40px;
+    padding: 0 50px;
+    border-radius: 3000px;
+    padding-right: 90px;
+    transition: var(--general-transition);
+    outline-width: 1px;
+}
+
+.header-search-bar-container input:focus {
+    outline: 1px solid var(--accent);
+}
+
+.header-search-bar-container input::-webkit-search-cancel-button {
+    display: none;
+}
+
+.header-search-cta {
+    position: absolute;
+    right: 10px;
+    font-size: 0.8rem;
+    padding: 8px 16px;
+}
+
+.header-icons {
+    gap: 10px;
+}
+
+.header-icon {
+    padding: 6px 12px;
+    border: 1px solid var(--border);
+    border-radius: var(--radius-sm);
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    transition: var(--general-transition);
+    cursor: pointer;
+}
+
+.header-icon:hover {
+    background-color: var(--surface-2);
+}
+
+.header-icon svg {
+    width: 16px;
+}
+
+@media(max-width:768px) {
+
+    header {
+        gap: 20px;
+    }
+
+    .logo span,
+    .header-search-cta {
+        display: none;
+    }
+
+    .header-search-bar-container input {
+        padding-right: 30px;
+    }
+}
+
+@media(max-width:550px) {
+    header {
+        gap: 10px;
+        padding: 20px 10px;
+    }
+
+    .logo {
+        display: none;
+    }
+}

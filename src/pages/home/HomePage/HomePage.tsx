@@ -1,5 +1,7 @@
+import Navbar from "../../../components/shared/Navbar/Navbar";
+
 function HomePage() {
-  return <div className="homepage">Home page</div>;
+  return <Navbar />;
 }
 
 export default HomePage;
