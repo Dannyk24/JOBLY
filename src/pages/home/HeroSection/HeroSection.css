@@ -1,0 +1,88 @@
+#hero-section {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    text-align: center;
+    flex-direction: column;
+    background: linear-gradient(to bottom, var(--accent-soft) 20%, var(--bg) 60%);
+    padding: 30px;
+    padding-top: 80px;
+}
+
+#hero-section h1 {
+    font-size: 3rem;
+
+    span {
+        color: var(--accent);
+    }
+}
+
+#hero-section p {
+    font-size: 1.1rem;
+    margin-top: 15px;
+    max-width: 700px;
+    line-height: 32px;
+    font-weight: 300;
+}
+
+.main-search-input-container {
+    display: flex;
+    flex-direction: column;
+    gap: 10px;
+    background-color: var(--surface);
+    width: 100%;
+    max-width: 500px;
+    margin-top: 30px;
+    padding: 20px;
+    border-radius: var(--radius-md);
+    transition: var(--general-transition);
+}
+
+.main-search-input-container:has(input:focus) {
+    outline: 2px solid var(--accent);
+    box-shadow: var(--shadow-md);
+}
+
+.main-search-input-container input {
+    height: 40px;
+    background: none;
+    border: none;
+    font-size: 0.9rem;
+    color: var(--text-2);
+}
+
+.main-search-input-container input::-webkit-search-cancel-button {
+    display: none;
+}
+
+.main-search-input-container input:focus {
+    outline: none;
+}
+
+.search-jobs-cta {
+    font-size: 0.9rem;
+}
+
+.popular-searches-container {
+    margin-top: 20px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    gap: 10px;
+    max-width: 500px;
+    flex-wrap: wrap;
+}
+
+.popular-searches-container .data-badge {
+    cursor: pointer;
+}
+
+@media(max-width:550px) {
+    #hero-section h1 {
+        font-size: 2rem;
+    }
+
+    #hero-section p {
+        font-size: 0.9rem;
+    }
+}

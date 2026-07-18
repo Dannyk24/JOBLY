@@ -1,5 +1,12 @@
+import { HeroSection } from "../HeroSection/HeroSection";
+import "./HomePage.css";
+
 function HomePage() {
-  return <div>Home Page</div>;
+  return (
+    <div className="app-page homepage">
+      <HeroSection />
+    </div>
+  );
 }
 
 export default HomePage;
