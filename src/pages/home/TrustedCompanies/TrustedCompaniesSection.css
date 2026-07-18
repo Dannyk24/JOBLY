@@ -7,6 +7,7 @@
     text-align: center;
     width: 100%;
     padding: 0px 30px;
+    max-width: 900px;
 }
 
 #trusted-companies-section h2 {
@@ -22,6 +23,7 @@
     justify-content: space-around;
     text-align: center;
     flex-wrap: wrap;
+    gap: 30px;
 }
 
 .trusted-company {
