@@ -167,6 +167,7 @@ aside {
     align-items: start;
     border-right: 1px solid var(--border);
     z-index: 150;
+    transition: var(--general-transition);
 }
 
 .sidebar-active {
@@ -225,10 +226,30 @@ aside {
     left: 0;
     z-index: 110;
     pointer-events: none;
+    transition: var(--general-transition);
 }
 
 .overlay-active {
     background-color: black;
     opacity: 0.5;
     pointer-events: all;
+}
+
+.sidebar-close-button {
+    display: flex;
+    border-radius: var(--radius-sm);
+    padding: 5px 10px;
+    border: 1px solid var(--border);
+    transition: var(--general-transition);
+    cursor: pointer;
+    place-self: end;
+}
+
+.sidebar-close-button:hover {
+    background-color: var(--surface-2);
+}
+
+.sidebar-close-button svg {
+    width: 21px;
+
 }
