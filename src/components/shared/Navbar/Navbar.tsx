@@ -1,4 +1,4 @@
-import { Bookmark, Cable, Menu, Moon, Search } from "lucide-react";
+import { Bookmark, Cable, Home, Menu, Moon, Search } from "lucide-react";
 import "./Navbar.css";
 
 function Navbar() {
@@ -8,7 +8,7 @@ function Navbar() {
         <div className="header-icon">
           <Menu />
         </div>
-        <div className="logo">
+        <div className="logo header-logo">
           <div className="logo-icon">
             <Cable />
           </div>
@@ -33,6 +33,29 @@ function Navbar() {
           </div>
         </div>
       </div>
+      <aside className="sidebar">
+        <div className="logo sidebar-logo">
+          <div className="logo-icon">
+            <Cable />
+          </div>
+          <span className="logo-text">Jobly</span>
+        </div>
+        <div className="nav-items">
+          <div className="nav-item active-nav-item">
+            <Home />
+            <span>Home</span>
+          </div>
+          <div className="nav-item">
+            <Search />
+            <span>Search</span>
+          </div>
+          <div className="nav-item">
+            <Bookmark />
+            <span>Saved Jobs</span>
+          </div>
+        </div>
+      </aside>
+      <div className="overlay"></div>
     </header>
   );
 }

@@ -7,6 +7,7 @@ header {
     border-bottom: 1px solid var(--border);
     background: transparent;
     backdrop-filter: blur(15px);
+    z-index: 100;
 }
 
 .logo,
@@ -127,7 +128,7 @@ header {
         gap: 20px;
     }
 
-    .logo span,
+    .header-logo span,
     .header-search-cta {
         display: none;
     }
@@ -143,7 +144,91 @@ header {
         padding: 20px 10px;
     }
 
-    .logo {
+    .header-logo {
         display: none;
     }
+}
+
+aside {
+    position: fixed;
+    height: 100dvh;
+    top: 0;
+    width: 220px;
+    background: var(--bg);
+    color: var(--text);
+    left: -300px;
+    opacity: 0;
+    pointer-events: none;
+    display: flex;
+    flex-direction: column;
+    gap: 20px;
+    padding: 20px 10px;
+    padding-right: 15px;
+    align-items: start;
+    border-right: 1px solid var(--border);
+    z-index: 150;
+}
+
+.sidebar-active {
+    left: 0;
+    opacity: 1;
+    pointer-events: all;
+}
+
+.nav-items {
+    display: flex;
+    flex-direction: column;
+    gap: 12px;
+    width: 100%;
+}
+
+.nav-item {
+    display: flex;
+    justify-content: start;
+    align-items: center;
+    gap: 6px;
+    padding: 6px 12px;
+    border-radius: var(--radius-sm);
+    border: 1px solid var(--border);
+    font-size: 0.85rem;
+    font-weight: 500;
+    width: 100%;
+    cursor: pointer;
+    transition: var(--general-transition);
+}
+
+.nav-item:hover {
+    background-color: var(--surface-2);
+}
+
+.active-nav-item {
+    background-color: var(--accent);
+    color: white;
+}
+
+.active-nav-item:hover {
+    background-color: var(--accent);
+}
+
+.nav-item svg {
+    width: 16px;
+    stroke-width: 2.2;
+}
+
+.overlay {
+    position: fixed;
+    width: 100vw;
+    height: 100vh;
+    top: 0;
+    right: 0;
+    bottom: 0;
+    left: 0;
+    z-index: 110;
+    pointer-events: none;
+}
+
+.overlay-active {
+    background-color: black;
+    opacity: 0.5;
+    pointer-events: all;
 }
