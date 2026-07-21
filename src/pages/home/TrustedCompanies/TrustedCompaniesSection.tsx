@@ -10,7 +10,7 @@ export function TrustedCompaniesSection() {
     { id: 6, name: "ramp" },
   ];
   return (
-    <section id="trusted-companies-section">
+    <section id="trusted-companies-section" className="homepage-section">
       <h2>trusted by teams at</h2>
       <div className="trusted-companies-grid">
         {trustedCompanies.map((company) => (

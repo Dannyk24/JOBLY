@@ -16,7 +16,7 @@ export function HeroSection() {
   ];
 
   return (
-    <section id="hero-section">
+    <section id="hero-section" className="homepage-section">
       <h1>
         Find your next <span>oppurtunity</span>
       </h1>

@@ -4,3 +4,48 @@
     flex-direction: column;
     gap: 50px;
 }
+
+.homepage-section {
+    padding: 30px;
+}
+
+.section-info-container {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
+    gap: 15px;
+    text-align: center;
+}
+
+.section-tagline {
+    text-transform: uppercase;
+    color: var(--accent);
+    font-size: 0.9rem;
+    font-weight: 500;
+}
+
+.section-header {
+    font-size: 2rem;
+    font-weight: 700;
+}
+
+.section-description {
+    max-width: 600px;
+    text-align: center;
+    font-size: 1rem;
+    font-weight: 400;
+    color: var(--text-2);
+    line-height: 30px;
+}
+
+@media(max-width:550px) {
+    .section-header {
+        font-size: 1.5rem;
+    }
+
+    .section-description {
+        font-size: 0.8rem;
+        line-height: 26px;
+    }
+}

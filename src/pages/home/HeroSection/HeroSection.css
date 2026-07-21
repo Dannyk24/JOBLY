@@ -5,7 +5,6 @@
     text-align: center;
     flex-direction: column;
     background: linear-gradient(to bottom, var(--accent-soft) 20%, var(--bg) 60%);
-    padding: 30px;
     padding-top: 80px;
 }
 
@@ -36,11 +35,12 @@
     padding: 20px;
     border-radius: var(--radius-md);
     transition: var(--general-transition);
+    outline-width: 0px;
 }
 
 .main-search-input-container:has(input:focus) {
-    outline: 2px solid var(--accent);
-    box-shadow: var(--shadow-md);
+    outline: 1px solid var(--accent);
+    box-shadow: 0px 0px 50px 5px var(--ring);
 }
 
 .main-search-input-container input {
@@ -79,7 +79,7 @@
 
 @media(max-width:550px) {
     #hero-section h1 {
-        font-size: 2rem;
+        font-size: 2.8rem;
     }
 
     #hero-section p {
