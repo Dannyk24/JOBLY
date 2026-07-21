@@ -1,5 +1,10 @@
-import type { SectionDisplayCardProps } from "../../../../types/SectionDisplayCard";
 import "./SectionDisplayCard.css";
+import type { SectionCardData } from "../../../../types/SectionDisplayCard";
+
+type SectionDisplayCardProps = SectionCardData & {
+  //Extends the SectionCardData and allows us to add additional properties e.g cardType
+  cardType: "default" | "information";
+};
 
 export function SectionDisplayCard({
   Icon,
@@ -9,9 +14,7 @@ export function SectionDisplayCard({
 }: SectionDisplayCardProps) {
   return (
     <div className="section-display-card">
-      <div
-        className={cardType ? `card-icon ${cardType}-card-icon` : "card-icon"}
-      >
+      <div className={`card-icon ${cardType}-card-icon`}>
         <Icon />
       </div>
       <span className="card-title">{title}</span>

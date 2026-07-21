@@ -1,10 +1,10 @@
-import type { SectionDisplayCardProps } from "../../../../types/SectionDisplayCard";
+import type { SectionCardData } from "../../../../types/SectionDisplayCard";
 import { SectionDisplayCard } from "../SectionDisplayCard/SectionDisplayCard";
 import "./SectionDisplayCardGrid.css";
 
 type SectionDisplayCardGridProps = {
-  cardsData: SectionDisplayCardProps[];
-  cardType?: string;
+  cardsData: SectionCardData[];
+  cardType: "default" | "information";
 };
 
 export function SectionDisplayCardGrid({

@@ -63,7 +63,10 @@ export function PopularCategoriesSection() {
         header="Browse by cateogry"
         description="Whatever you're great at, there's a team out there looking for exactly that."
       />
-      <SectionDisplayCardGrid cardsData={popularJobCategoriesData} />
+      <SectionDisplayCardGrid
+        cardsData={popularJobCategoriesData}
+        cardType="default"
+      />
     </section>
   );
 }

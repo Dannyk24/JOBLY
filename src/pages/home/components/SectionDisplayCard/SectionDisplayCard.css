@@ -34,14 +34,6 @@
     stroke-width: 2.5;
 }
 
-.section-display-card .information-card-icon {
-    background-color: var(--accent);
-}
-
-.section-display-card .information-card-icon svg {
-    stroke: white;
-}
-
 .section-display-card .card-title {
     font-weight: 600;
     font-size: 1rem;
@@ -59,4 +51,14 @@
     -webkit-line-clamp: 2;
     line-clamp: all;
     line-height: 25px;
+}
+
+/*Card type variants*/
+
+.section-display-card .information-card-icon {
+    background-color: var(--accent);
+}
+
+.section-display-card .information-card-icon svg {
+    stroke: white;
 }
