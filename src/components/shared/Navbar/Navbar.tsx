@@ -1,6 +1,7 @@
-import { Bookmark, Cable, Home, Menu, Moon, Search, X } from "lucide-react";
+import { Bookmark, Home, Menu, Moon, Search, X } from "lucide-react";
 import "./Navbar.css";
 import { useState } from "react";
+import { Logo } from "../../ui/logo/Logo";
 
 function Navbar() {
   const [isSidebarOpen, setIsSidebarOpen] = useState(false);
@@ -16,12 +17,7 @@ function Navbar() {
         >
           <Menu />
         </div>
-        <div className="logo header-logo">
-          <div className="logo-icon">
-            <Cable />
-          </div>
-          <span className="logo-text">Jobly</span>
-        </div>
+        <Logo className="header-logo" />
       </div>
       <div className="header-right">
         <div className="header-search-bar-container">
@@ -48,12 +44,7 @@ function Navbar() {
         >
           <X />
         </div>
-        <div className="logo sidebar-logo">
-          <div className="logo-icon">
-            <Cable />
-          </div>
-          <span className="logo-text">Jobly</span>
-        </div>
+        <Logo className="sidebar-logo" />
         <div className="nav-items">
           <div className="nav-item active-nav-item">
             <Home />

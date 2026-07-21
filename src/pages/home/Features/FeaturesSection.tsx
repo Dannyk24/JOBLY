@@ -26,7 +26,7 @@ export function FeaturesSection() {
       Icon: Briefcase,
       title: "Apply Through Trusted Publishers",
       description:
-        "Every listing links directly to the company's own careers page no third-party forms, no spam.",
+        "Every listing links directly to the company's own careers page or one of our trusted publishers no third-party forms, no spam.",
     },
   ];
   return (

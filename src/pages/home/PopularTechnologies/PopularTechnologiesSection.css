@@ -1,6 +1,6 @@
 .popular-technologies-container {
     max-width: 900px;
-    place-self: center;
+    justify-self: center;
     gap: 30px;
 }
 

@@ -4,6 +4,7 @@ import { TrustedCompaniesSection } from "./TrustedCompanies/TrustedCompaniesSect
 import "./HomePage.css";
 import { PopularTechnologiesSection } from "./PopularTechnologies/PopularTechnologiesSection";
 import { FeaturesSection } from "./Features/FeaturesSection";
+import { TrustedPublishersSection } from "./TrustedPublishers/TrustedPublishersSection";
 
 function HomePage() {
   return (
@@ -13,6 +14,7 @@ function HomePage() {
       <PopularCategoriesSection />
       <PopularTechnologiesSection />
       <FeaturesSection />
+      <TrustedPublishersSection />
     </div>
   );
 }
