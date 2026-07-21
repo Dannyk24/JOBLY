@@ -1,7 +1,8 @@
-import { Bookmark, Home, Menu, Moon, Search, X } from "lucide-react";
-import "./Navbar.css";
+import { Bookmark, Menu, Moon, Search } from "lucide-react";
 import { useState } from "react";
+import "./Navbar.css";
 import { Logo } from "../../ui/logo/Logo";
+import { Sidebar } from "../Sidebar/Sidebar";
 
 function Navbar() {
   const [isSidebarOpen, setIsSidebarOpen] = useState(false);
@@ -37,29 +38,10 @@ function Navbar() {
           </div>
         </div>
       </div>
-      <aside className={isSidebarOpen ? "sidebar sidebar-active" : "sidebar"}>
-        <div
-          className="sidebar-close-button"
-          onClick={() => setIsSidebarOpen(false)}
-        >
-          <X />
-        </div>
-        <Logo className="sidebar-logo" />
-        <div className="nav-items">
-          <div className="nav-item active-nav-item">
-            <Home />
-            <span>Home</span>
-          </div>
-          <div className="nav-item">
-            <Search />
-            <span>Search</span>
-          </div>
-          <div className="nav-item">
-            <Bookmark />
-            <span>Saved Jobs</span>
-          </div>
-        </div>
-      </aside>
+      <Sidebar
+        isSidebarOpen={isSidebarOpen}
+        setIsSidebarOpen={setIsSidebarOpen}
+      />
       <div
         className={isSidebarOpen ? "overlay overlay-active" : "overlay"}
         onClick={() => {
