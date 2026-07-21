@@ -1,4 +1,6 @@
 import { Cable } from "lucide-react";
+import { Link } from "react-router";
+import "./Logo.css";
 
 type LogoProps = {
   className?: string;
@@ -6,11 +8,11 @@ type LogoProps = {
 
 export function Logo({ className }: LogoProps) {
   return (
-    <div className={`logo ${className && className}`}>
+    <Link className={`logo ${className && className}`} to="/">
       <div className="logo-icon">
         <Cable />
       </div>
       <span className="logo-text">Jobly</span>
-    </div>
+    </Link>
   );
 }

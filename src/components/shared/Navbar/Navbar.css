@@ -184,6 +184,17 @@ aside {
     pointer-events: all;
 }
 
+
+.sidebar-logo {
+    display: none;
+}
+
+@media(max-width:768px) {
+    .sidebar-logo {
+        display: flex;
+    }
+}
+
 .nav-items {
     display: flex;
     flex-direction: column;
