@@ -64,13 +64,7 @@
 }
 
 .popular-searches-container {
-    margin-top: 20px;
-    display: flex;
-    justify-content: center;
-    align-items: center;
-    gap: 10px;
     max-width: 500px;
-    flex-wrap: wrap;
 }
 
 .popular-searches-container .data-badge {

@@ -2,6 +2,7 @@ import { HeroSection } from "./HeroSection/HeroSection";
 import { PopularCategoriesSection } from "./PopularCategories/PopularCategoriesSection";
 import { TrustedCompaniesSection } from "./TrustedCompanies/TrustedCompaniesSection";
 import "./HomePage.css";
+import { PopularTechnologiesSection } from "./PopularTechnologies/PopularTechnologiesSection";
 
 function HomePage() {
   return (
@@ -9,6 +10,7 @@ function HomePage() {
       <HeroSection />
       <TrustedCompaniesSection />
       <PopularCategoriesSection />
+      <PopularTechnologiesSection />
     </div>
   );
 }

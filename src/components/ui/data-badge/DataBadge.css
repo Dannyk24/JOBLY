@@ -9,6 +9,7 @@
     width: fit-content;
     font-weight: 600;
     display: flex;
+    gap: 6px;
     justify-content: center;
     align-items: center;
     text-align: center;
@@ -20,4 +21,18 @@
     translate: 0 -2px;
     color: var(--accent);
     background-color: var(--accent-soft);
+}
+
+.data-badge-with-icon {
+    border-radius: var(--radius-sm);
+}
+
+.data-badge-icon {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.data-badge-with-icon svg {
+    width: 15px;
 }

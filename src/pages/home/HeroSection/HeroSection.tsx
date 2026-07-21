@@ -30,7 +30,7 @@ export function HeroSection() {
           search jobs
         </button>
       </div>
-      <div className="popular-searches-container">
+      <div className="popular-searches-container data-badge-grid">
         {popularSearches.map((search) => (
           <DataBadge item={search.item} key={search.id} />
         ))}
