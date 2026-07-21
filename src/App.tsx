@@ -1,9 +1,9 @@
 import { Routes, Route } from "react-router";
 
-import HomePage from "./pages/home/HomePage/HomePage";
-import SearchPage from "./pages/search/SearchPage/SearchPage";
-import SavedJobsPage from "./pages/saved-jobs/SavedJobsPage/SavedJobsPage";
-import JobDetailsPage from "./pages/job-details/JobDetailsPage/JobDetailsPage";
+import HomePage from "./pages/home/HomePage";
+import SearchPage from "./pages/search/SearchPage";
+import SavedJobsPage from "./pages/saved-jobs/SavedJobsPage";
+import JobDetailsPage from "./pages/job-details/JobDetailsPage";
 import PageNotFound from "./pages/404/PageNotFound";
 
 import { MainLayout } from "./layouts";
