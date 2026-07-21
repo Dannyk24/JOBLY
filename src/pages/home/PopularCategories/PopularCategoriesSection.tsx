@@ -8,7 +8,7 @@ import {
   Smartphone,
   SquareChartGantt,
 } from "lucide-react";
-import { SectionDisplayCardGrid } from "../../../components/shared/SectionDisplayCardGrid/SectionDisplayCardGrid";
+import { SectionDisplayCardGrid } from "../components/SectionDisplayCardGrid/SectionDisplayCardGrid";
 import "./PopularCategoriesSection.css";
 
 export function PopularCategoriesSection() {

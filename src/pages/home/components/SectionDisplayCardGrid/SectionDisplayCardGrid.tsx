@@ -1,4 +1,4 @@
-import type { SectionDisplayCardProps } from "../../../types/SectionDisplayCard";
+import type { SectionDisplayCardProps } from "../../../../types/SectionDisplayCard";
 import { SectionDisplayCard } from "../SectionDisplayCard/SectionDisplayCard";
 import "./SectionDisplayCardGrid.css";
 
