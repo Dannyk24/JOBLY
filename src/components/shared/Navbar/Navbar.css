@@ -215,18 +215,19 @@ aside {
     width: 100%;
     cursor: pointer;
     transition: var(--general-transition);
+    color: var(--text-2);
 }
 
 .nav-item:hover {
     background-color: var(--surface-2);
 }
 
-.active-nav-item {
+.nav-item.active {
     background-color: var(--accent);
     color: white;
 }
 
-.active-nav-item:hover {
+.nav-item.active:hover {
     background-color: var(--accent);
 }
 

@@ -1,6 +1,6 @@
 import { Bookmark, Home, Search, X } from "lucide-react";
-import { useState } from "react";
 import { Logo } from "../../ui/logo/Logo";
+import { NavLink } from "react-router";
 
 type SidebarProps = {
   isSidebarOpen: boolean;
@@ -8,8 +8,6 @@ type SidebarProps = {
 };
 
 export function Sidebar({ isSidebarOpen, setIsSidebarOpen }: SidebarProps) {
-  const [activeNavItem, setActiveNavItem] = useState("home");
-
   return (
     <aside className={isSidebarOpen ? "sidebar sidebar-active" : "sidebar"}>
       <div
@@ -20,41 +18,36 @@ export function Sidebar({ isSidebarOpen, setIsSidebarOpen }: SidebarProps) {
       </div>
       <Logo className="sidebar-logo" />
       <div className="nav-items">
-        <div
-          className={
-            activeNavItem === "home" ? "nav-item active-nav-item" : "nav-item"
-          }
+        <NavLink
+          to="/"
+          className="nav-item"
           onClick={() => {
-            setActiveNavItem("home");
+            setIsSidebarOpen(false);
           }}
         >
           <Home />
           <span>Home</span>
-        </div>
-        <div
-          className={
-            activeNavItem === "search" ? "nav-item active-nav-item" : "nav-item"
-          }
+        </NavLink>
+        <NavLink
+          to="/search"
+          className="nav-item"
           onClick={() => {
-            setActiveNavItem("search");
+            setIsSidebarOpen(false);
           }}
         >
           <Search />
           <span>Search</span>
-        </div>
-        <div
-          className={
-            activeNavItem === "saved-jobs"
-              ? "nav-item active-nav-item"
-              : "nav-item"
-          }
+        </NavLink>
+        <NavLink
+          to="/saved-jobs"
+          className="nav-item"
           onClick={() => {
-            setActiveNavItem("saved-jobs");
+            setIsSidebarOpen(false);
           }}
         >
           <Bookmark />
           <span>Saved Jobs</span>
-        </div>
+        </NavLink>
       </div>
     </aside>
   );
