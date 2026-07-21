@@ -5,10 +5,13 @@ export function SectionDisplayCard({
   Icon,
   title,
   description,
+  cardType,
 }: SectionDisplayCardProps) {
   return (
     <div className="section-display-card">
-      <div className="card-icon">
+      <div
+        className={cardType ? `card-icon ${cardType}-card-icon` : "card-icon"}
+      >
         <Icon />
       </div>
       <span className="card-title">{title}</span>

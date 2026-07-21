@@ -19,7 +19,7 @@
 
 .section-display-card .card-icon {
     padding: 10px 14px;
-    background-color: var(--accent);
+    background-color: var(--accent-soft);
     width: fit-content;
     border-radius: var(--radius-sm);
     display: flex;
@@ -29,9 +29,17 @@
 }
 
 .section-display-card .card-icon svg {
-    stroke: white;
+    stroke: var(--accent);
     width: 1.2rem;
     stroke-width: 2.5;
+}
+
+.section-display-card .information-card-icon {
+    background-color: var(--accent);
+}
+
+.section-display-card .information-card-icon svg {
+    stroke: white;
 }
 
 .section-display-card .card-title {

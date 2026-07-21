@@ -4,10 +4,12 @@ import "./SectionDisplayCardGrid.css";
 
 type SectionDisplayCardGridProps = {
   cardsData: SectionDisplayCardProps[];
+  cardType?: string;
 };
 
 export function SectionDisplayCardGrid({
   cardsData,
+  cardType,
 }: SectionDisplayCardGridProps) {
   return (
     <div className="section-display-cards-grid">
@@ -17,6 +19,7 @@ export function SectionDisplayCardGrid({
           title={data.title}
           description={data.description}
           key={index}
+          cardType={cardType}
         />
       ))}
     </div>
