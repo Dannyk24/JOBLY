@@ -1,4 +1,16 @@
 .trusted-publishers-container {
-    max-width: 700px;
+    max-width: 900px;
     justify-self: center;
+    gap: 30px;
+}
+
+.trusted-publishers-container .data-badge {
+    font-size: 1rem;
+    cursor: pointer;
+}
+
+@media(max-width:550px) {
+    .trusted-publishers-container .data-badge {
+        font-size: 0.9rem;
+    }
 }
