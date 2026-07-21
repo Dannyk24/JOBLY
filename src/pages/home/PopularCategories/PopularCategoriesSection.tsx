@@ -10,6 +10,7 @@ import {
 } from "lucide-react";
 import { SectionDisplayCardGrid } from "../components/SectionDisplayCardGrid/SectionDisplayCardGrid";
 import "./PopularCategoriesSection.css";
+import { SectionInfo } from "../components/SectionInfo/SectionInfo";
 
 export function PopularCategoriesSection() {
   const popularJobCategoriesData = [
@@ -57,15 +58,11 @@ export function PopularCategoriesSection() {
 
   return (
     <section id="popular-categories-section" className="homepage-section">
-      <div className="section-info-container">
-        <span className="section-tagline">explore</span>
-        <span className="section-header">Browse by category</span>
-        <p className="section-description">
-          Whatever you're great at, there's a team out there looking for exactly
-          that.
-        </p>
-      </div>
-
+      <SectionInfo
+        tagline="explore"
+        header="Browse by cateogry"
+        description="Whatever you're great at, there's a team out there looking for exactly that."
+      />
       <SectionDisplayCardGrid cardsData={popularJobCategoriesData} />
     </section>
   );
