@@ -1,11 +1,19 @@
-import { Bookmark, Menu, Moon, Search } from "lucide-react";
-import { useState } from "react";
+import { Bookmark, Menu, Moon, Search, Sun } from "lucide-react";
+import { useEffect, useState } from "react";
 import "./Navbar.css";
 import { Logo } from "../../ui/logo/Logo";
 import { Sidebar } from "../Sidebar/Sidebar";
 
 function Navbar() {
   const [isSidebarOpen, setIsSidebarOpen] = useState(false);
+  const [theme, setTheme] = useState(() => {
+    return localStorage.getItem("jobly-theme") ?? "dark"; //Default to dark if user has no saved theme
+  });
+
+  useEffect(() => {
+    localStorage.setItem("jobly-theme", theme);
+    document.documentElement.classList.toggle("dark", theme === "dark");
+  }, [theme]);
 
   return (
     <header>
@@ -30,8 +38,13 @@ function Navbar() {
           <button className="cta primary-cta header-search-cta">Search</button>
         </div>
         <div className="header-icons">
-          <div className="header-icon">
-            <Moon />
+          <div
+            className="header-icon"
+            onClick={() => {
+              setTheme(theme === "dark" ? "light" : "dark");
+            }}
+          >
+            {theme === "dark" ? <Sun /> : <Moon />}
           </div>
           <div className="header-icon">
             <Bookmark />
