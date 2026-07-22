@@ -1,4 +1,4 @@
-import { HeroSection } from "./HeroSection/HeroSection";
+import { HeroSection } from "../../components/shared/HeroSection/HeroSection";
 import { PopularCategoriesSection } from "./PopularCategories/PopularCategoriesSection";
 import { TrustedCompaniesSection } from "./TrustedCompanies/TrustedCompaniesSection";
 import "./HomePage.css";

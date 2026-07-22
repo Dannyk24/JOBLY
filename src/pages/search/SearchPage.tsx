@@ -1,5 +1,12 @@
+import { HeroSection } from "../../components/shared/HeroSection/HeroSection";
+import "./SearchPage.css";
+
 function SearchPage() {
-  return <div className="search-page">Search Page</div>;
+  return (
+    <div className="app-page search-page">
+      <HeroSection />
+    </div>
+  );
 }
 
 export default SearchPage;
