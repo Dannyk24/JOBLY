@@ -85,6 +85,7 @@ header {
     padding-right: 90px;
     transition: var(--general-transition);
     outline-width: 1px;
+    color: var(--text);
 }
 
 .header-search-bar-container input:focus {
